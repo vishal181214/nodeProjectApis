@@ -6,6 +6,7 @@ const data3 = require('./Routes/Food')
 const data4 = require('./Routes/Hollywood')
 const data5 = require('./Routes/Nature')
 const data6 = require('./Routes/Tehnology')
+const data7 = require('./Routes/Header')
 const cors = require('cors')
 
 const corsOptions ={
@@ -21,6 +22,7 @@ app.use('/home', data3)
 app.use('/home', data4)
 app.use('/home', data5)
 app.use('/home', data6)
+app.use('/home', data7)
 app.listen(process.env.PORT||8080,()=>{
     console.log("server running");
 })
